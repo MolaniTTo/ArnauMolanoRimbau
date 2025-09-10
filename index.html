@@ -5,31 +5,62 @@
   <title>Portfolio de Videojuegos</title>
   <style>
     body { 
-      font-family: Arial, sans-serif; 
-      margin: 40px; 
-      background: #f4f4f4; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      margin: 0; 
+      background: #f4f4f9; 
+      color: #333;
     }
-    h1 { 
-      color: #333; 
+    header {
       text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #4a90e2, #5a3ea6);
+      color: white;
     }
+    header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 15px;
+    }
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
     .proyecto { 
       background: white; 
       padding: 20px; 
       margin-bottom: 30px; 
-      border-radius: 10px; 
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 15px; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .galeria {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
+    .proyecto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+    .proyecto h2 { 
+      color: #4a90e2;
+      margin-top: 0;
+    }
+    .proyecto h3 {
+      font-weight: normal;
+      color: #666;
+    }
+    .proyecto ul {
       margin-top: 10px;
-      margin-bottom: 10px;
-    }
-    .galeria img {
-      width: 100%;
-      border-radius: 8px;
     }
     .video {
       position: relative;
@@ -39,142 +70,102 @@
       max-width: 100%;
       background: #000;
       margin-top: 15px;
-      border-radius: 8px;
+      border-radius: 10px;
     }
-    
     .video iframe {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+      border: none;
     }
-    
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background: #4a90e2;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.2s ease;
+    }
+    a:hover {
+      background: #357ab8;
+    }
   </style>
 </head>
 <body>
-  <h1>Portfolio de Arnau Molano Rimbau</h1>
-  <p style="text-align:center;">Bienvenido a mi portfolio. Aquí muestro mis proyectos en Unity y C#.</p>
 
-  <!-- Proyecto 1 -->
-  <div class="proyecto">
-    <h2>DivorciaDOS</h2>
-    <h3>Videojuego 3D que juega con la perspectiva y la narración para crear efectos ópticos, retos visuales y una historia única</h3>
-    <p><b>Características principales:</b></p>
-    <ul>
-      <li>Multijugador online para móvil, permitiendo que dos jugadores se conecten desde sus dispositivos.</li>
-      <li>Algoritmos de busqueda eficiente Pathfinding y sistema de nodos</li>
-      <li>Aventura cooperativa centrada en la narrativa.</li>
-      <li>Diseño de niveles y mecánicas enfocadas en transmitir emociones.</li>
-      <li>Desarrollo realizado en equipo (programación, diseño de niveles y narrativa interactiva).</li>
-    </ul>
+  <!-- Encabezado -->
+  <header>
+    <img src="imagenes/foto-perfil.jpg" alt="Foto de Arnau Molano Rimbau">
+    <h1>Arnau Molano Rimbau</h1>
+    <p>Desarrollador de Videojuegos · Unity & C#</p>
+  </header>
 
-    <!-- Galería de imágenes -->
-    <div class="galeria">
-      <img src="imagenes/shooter.png" alt="Screenshot 1">
-      <img src="imagenes/shooter.png" alt="Screenshot 2">
-      <img src="imagenes/shooter.png" alt="Screenshot 3">
-    </div>
-
-    <div class="video">
-        <iframe width="560" height="315" 
-          src="https://www.youtube.com/embed/2gzXP0xu8q8?si=Ow9AswIVsWAkbF1x" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
-    </div>
-
-    <p><a href="https://github.com/tuusuario/shooter-arena">Repositorio en GitHub</a></p>
-  </div>
-
-  <!-- Proyecto 2 -->
-  <div class="proyecto">
-    <h2>Endless Path</h2>
-    <h3>Videojuego 2D de perspectiva topdown que se caracteriza por su generacion procedural de niveles y la muerte permanente del personaje</h3>
-    <p><b>Características principales:</b></p>
-    <ul>
-      <li>Generacion procedural de salas, donde todas las partidas son distintas</li>
-      <li>Desbloqueo de armas mediante el avance de la partida</li>
-      <li>Capacidad de adquirir mejoras para las armas y el personaje</li>
-    </ul>
+  <div class="container">
     
-    <!-- Galería de imágenes -->
-    <div class="galeria">
-      <img src="imagenes/shooter.png" alt="Screenshot 1">
-      <img src="imagenes/shooter.png" alt="Screenshot 2">
-      <img src="imagenes/shooter.png" alt="Screenshot 3">
-    </div>
-
-    <div class="video">
-        <iframe width="560" height="315" 
-          src="https://www.youtube.com/embed/ca8Cd_ntsjY?si=HbBGVmDlnMiYbWmv" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
-    </div>
-    <p><a href="https://github.com/tuusuario/naves-3d">Repositorio en GitHub</a></p>
-  </div>
-
-  <!-- Proyecto 3 -->
-  <div class="proyecto">
-    <h2>VVVVVV</h2>
-    <h3>Videojuego 2D de exploración por secciones que se caracteriza por el cambio de gravedad</h3>
-    <p><b>Características principales:</b></p>
-    <ul>
-      <li>Cambio de gravedad al saltar con el personaje</li>
-      <li>Apertura de puertas con sus respectivas llaves</li>
-      <li>No funciona con scroll horizontal ni vertical sinó con diferentes pantallas o cuadros al estilo retro de la NES o Game Boy</li>
-    </ul>
-    <!-- Galería de imágenes -->
-    <div class="galeria">
-      <img src="imagenes/shooter.png" alt="Screenshot 1">
-      <img src="imagenes/shooter.png" alt="Screenshot 2">
-      <img src="imagenes/shooter.png" alt="Screenshot 3">
-    </div>
-
-    <div class="video">
-        <iframe width="560" height="315" 
-          src="https://www.youtube.com/embed/Q1IvZor3TkY?si=k0Ymxo9O97YM0fan" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
-    </div>
-    <p><a href="https://github.com/tuusuario/proyecto3">Repositorio en GitHub</a></p>
-  </div>
-
-  <!-- Proyecto 4 -->
-  <div class="proyecto">
-    <h2>Skyline Legends</h2>
-    <h3>Videojuego 3D multijugador de carreras de naves espaciales</h3>
-    <p><b>Características principales:</b></p>
+    <!-- Proyecto 1 -->
+    <div class="proyecto">
+      <h2>DivorciaDOS</h2>
+      <h3>Videojuego 3D que juega con la perspectiva y la narración para crear efectos ópticos, retos visuales y una historia única</h3>
       <ul>
-        <li>Sistema multijugador en local en pantalla dividida para jugar con amigos</li>
-        <li>Gashapon de desbloqueo de diferentes naves con sus respectivas caracteristicas</li>
-        <li>Sistema de puntuaje de tiempos guardado en base de datos y accesible desde el juego para ver quien es el mejor</li>
-        <li>Diferentes circuitos con sus refuerzos positivos y negativos</li>
+        <li>Multijugador online para móvil.</li>
+        <li>Algoritmos de pathfinding y sistema de nodos.</li>
+        <li>Aventura cooperativa centrada en la narrativa.</li>
       </ul>
-    <!-- Galería de imágenes -->
-    <div class="galeria">
-      <img src="imagenes/shooter.png" alt="Screenshot 1">
-      <img src="imagenes/shooter.png" alt="Screenshot 2">
-      <img src="imagenes/shooter.png" alt="Screenshot 3">
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/2gzXP0xu8q8" allowfullscreen></iframe>
+      </div>
+      <a href="https://github.com/tuusuario/shooter-arena">Repositorio en GitHub</a>
     </div>
 
-    <div class="video">
-        <iframe width="560" height="315" 
-          src="https://www.youtube.com/embed/Lz4GR2ko1k0?si=9FgKixY16t9YO4d3" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
+    <!-- Proyecto 2 -->
+    <div class="proyecto">
+      <h2>Endless Path</h2>
+      <h3>Roguelike 2D con generación procedural y muerte permanente</h3>
+      <ul>
+        <li>Generación procedural de salas.</li>
+        <li>Desbloqueo y mejora de armas.</li>
+        <li>Partidas siempre diferentes.</li>
+      </ul>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/ca8Cd_ntsjY" allowfullscreen></iframe>
+      </div>
+      <a href="https://github.com/tuusuario/naves-3d">Repositorio en GitHub</a>
     </div>
-    <p><a href="https://github.com/tuusuario/proyecto4">Repositorio en GitHub</a></p>
+
+    <!-- Proyecto 3 -->
+    <div class="proyecto">
+      <h2>VVVVVV</h2>
+      <h3>Exploración retro 2D con mecánica de gravedad invertida</h3>
+      <ul>
+        <li>Cambio de gravedad como mecánica principal.</li>
+        <li>Exploración por pantallas tipo NES/Game Boy.</li>
+      </ul>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/Q1IvZor3TkY" allowfullscreen></iframe>
+      </div>
+      <a href="https://github.com/tuusuario/proyecto3">Repositorio en GitHub</a>
+    </div>
+
+    <!-- Proyecto 4 -->
+    <div class="proyecto">
+      <h2>Skyline Legends</h2>
+      <h3>Videojuego 3D multijugador de carreras de naves espaciales</h3>
+      <ul>
+        <li>Multijugador local en pantalla dividida.</li>
+        <li>Sistema gashapon de desbloqueo de naves.</li>
+        <li>Ranking de tiempos conectado a base de datos.</li>
+      </ul>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/Lz4GR2ko1k0" allowfullscreen></iframe>
+      </div>
+      <a href="https://github.com/tuusuario/proyecto4">Repositorio en GitHub</a>
+    </div>
+
   </div>
+</body>
+</html>
 
