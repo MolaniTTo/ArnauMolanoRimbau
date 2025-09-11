@@ -47,7 +47,31 @@
       display: flex;
       justify-content: center;
       gap: 15px;
-    }
+      }
+      .circle-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: white;
+      color: #4a90e2;
+      text-decoration: none;
+      font-size: 1.5rem;
+      transition: transform 0.3s, background 0.3s, color 0.3s;
+      overflow: hidden;
+      }
+      .circle-btn img {
+      width: 60%;
+      height: 60%;
+      object-fit: contain;
+      }
+      .circle-btn:hover {
+      transform: scale(1.2);
+      background: #ff9800;
+      color: white;
+      }
     .social-buttons a {
       display: inline-flex;
       align-items: center;
@@ -151,9 +175,9 @@
     <p class="tagline">"Apasionado por crear experiencias inmersivas en 2D y 3D, explorando IA, narrativa interactiva y multijugador."</p>
 
     <div class="social-buttons">
-      <a href="CV_Arnau.pdf" title="Descargar CV">📄</a>
-      <a href="https://github.com/MolaniTTo" title="GitHub">💻</a>
-      <a href="https://www.linkedin.com/in/tuusuario" title="LinkedIn">🔗</a>
+      <a href="CV_Arnau.pdf" title="Descargar CV" class="circle-btn">📄</a>
+      <a href="https://github.com/MolaniTTo" title="GitHub" class="circle-btn"><img src="imagenes/github-logo.png" alt="GitHub"></a>
+      <a href="https://www.linkedin.com/in/tuusuario" title="LinkedIn" class="circle-btn"><img src="imagenes/linkedin-logo.png" alt="LinkedIn"></a>
     </div>
   </header>
 
