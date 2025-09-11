@@ -5,113 +5,63 @@
   <title>Portfolio de Videojuegos</title>
   <style>
     body { 
-      font-family: Arial, sans-serif; 
-      margin: 0;
-      background: #f4f4f4; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      margin: 0; 
+      background: #f4f4f9; 
       color: #333;
     }
-
-    /* ======= HEADER ======= */
     header {
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
-      color: white;
       text-align: center;
-      padding: 60px 20px;
-      border-radius: 0 0 50px 50px;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #4a90e2, #5a3ea6);
+      color: white;
     }
-
     header img {
       width: 150px;
       height: 150px;
+      object-fit: cover;
       border-radius: 50%;
       border: 4px solid white;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
-
     header h1 {
-      margin: 10px 0 5px 0;
-      font-size: 2.5em;
+      margin: 10px 0 5px;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
     }
 
-    header h2 {
-      margin: 0;
-      font-size: 1.2em;
-      font-weight: normal;
-      color: #ddd;
-    }
-
-    .tagline {
-      font-size: 1.1em;
-      margin: 15px 0;
-      font-style: italic;
-      color: #f0f0f0;
-    }
-
-    /* ======= BOTONES RÁPIDOS ======= */
-    .social-buttons {
-      margin: 20px 0;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .social-buttons a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background: white;
-      color: #1f1c2c;
-      text-decoration: none;
-      font-size: 1.4em;
-      transition: transform 0.3s, background 0.3s, color 0.3s;
-    }
-
-    .social-buttons a:hover {
-      transform: scale(1.2);
-      background: #ff9800;
-      color: white;
-    }
-
-    /* ======= SECCIONES GENERALES ======= */
-    section {
+    .container {
       max-width: 1000px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: auto;
+      padding: 20px;
     }
 
-    section h2 {
-      margin-top: 0;
-      color: #1f1c2c;
-    }
-
-    /* ======= PROYECTOS (tu código original adaptado) ======= */
     .proyecto { 
-      background: #fafafa; 
+      background: white; 
       padding: 20px; 
       margin-bottom: 30px; 
-      border-radius: 10px; 
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 15px; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-
-    .galeria {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
+    .proyecto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+    .proyecto h2 { 
+      color: #4a90e2;
+      margin-top: 0;
+    }
+    .proyecto h3 {
+      font-weight: normal;
+      color: #666;
+    }
+    .proyecto ul {
       margin-top: 10px;
-      margin-bottom: 10px;
     }
-
-    .galeria img {
-      width: 100%;
-      border-radius: 8px;
-    }
-
     .video {
       position: relative;
       padding-bottom: 56.25%; 
@@ -120,15 +70,28 @@
       max-width: 100%;
       background: #000;
       margin-top: 15px;
-      border-radius: 8px;
+      border-radius: 10px;
     }
-
     .video iframe {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+      border: none;
+    }
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background: #4a90e2;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.2s ease;
+    }
+    a:hover {
+      background: #357ab8;
     }
   </style>
 </head>
@@ -138,37 +101,10 @@
   <header>
     <img src="imagenes/foto-perfil.jpg" alt="Foto de Arnau Molano Rimbau">
     <h1>Arnau Molano Rimbau</h1>
-    <h2>Desarrollador de Videojuegos · Unity & C#</h2>
-    <p class="tagline">"Apasionado por crear experiencias inmersivas en 2D y 3D, explorando IA, narrativa interactiva y multijugador."</p>
-    
-    <div class="social-buttons">
-      <a href="CV_Arnau.pdf" title="Descargar CV">📄</a>
-      <a href="https://github.com/tuusuario" title="GitHub">💻</a>
-      <a href="https://www.linkedin.com/in/tuusuario" title="LinkedIn">🔗</a>
-    </div>
+    <p>Desarrollador de Videojuegos · Unity & C#</p>
   </header>
-
-  <section>
-    <h2>Sobre mí</h2>
-    <p>
-      Soy desarrollador de videojuegos con formación en desarrollo de aplicaciones multiplataforma y especialización en videojuegos y VR. 
-      Me apasiona el diseño de mecánicas innovadoras, el multijugador y la creación de experiencias inmersivas. 
-      Actualmente sigo ampliando mis conocimientos en Unity y C#, trabajando en proyectos propios que combinan creatividad y tecnología.
-    </p>
-  </section>
-
-  <section>
-    <h2>Roadmap</h2>
-    <p>
-      Mi objetivo profesional es crecer como desarrollador de gameplay y diseño de sistemas, integrándome en un equipo de desarrollo 
-      donde pueda aportar creatividad y resolver problemas técnicos complejos. 
-      Estoy especialmente interesado en trabajar en proyectos indie y AAA que exploren nuevas formas de jugabilidad, narrativa y experiencias inmersivas.
-    </p>
-  </section>
-
-  <section>
-    <h2>Proyectos</h2>
-    
+  
+<div class="container">
     <!-- Proyecto 1 -->
     <div class="proyecto">
       <h2>DivorciaDOS</h2>
@@ -230,7 +166,7 @@
       <a href="https://github.com/MolaniTTo/API-SkylineLegends">API Skyline Legands</a>
       <a href="https://github.com/MolaniTTo/WebSkylineLegends">WEB Skyline Legands</a>
     </div>
-  </section>
+</div>
 </body>
 </html>
 
