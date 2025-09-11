@@ -33,10 +33,56 @@
       opacity: 0.9;
     }
 
+    /* Tagline */
+    .tagline {
+      font-size: 1.1rem;
+      margin: 15px 0;
+      font-style: italic;
+      color: #f0f0f0;
+    }
+
+    /* Botones rápidos */
+    .social-buttons {
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    .social-buttons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: white;
+      color: #4a90e2;
+      text-decoration: none;
+      font-size: 1.4em;
+      transition: transform 0.3s, background 0.3s, color 0.3s;
+    }
+    .social-buttons a:hover {
+      transform: scale(1.2);
+      background: #ff9800;
+      color: white;
+    }
+
     .container {
       max-width: 1000px;
       margin: auto;
       padding: 20px;
+    }
+
+    section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      margin-top: 0;
+      color: #4a90e2;
     }
 
     .proyecto { 
@@ -101,10 +147,41 @@
   <header>
     <img src="imagenes/foto-perfil.jpg" alt="Foto de Arnau Molano Rimbau">
     <h1>Arnau Molano Rimbau</h1>
-    <p>Desarrollador de Videojuegos · Unity & C#</p>
+    <h2>Desarrollador de Videojuegos · Unity & C#</h2>
+    <p class="tagline">"Apasionado por crear experiencias inmersivas en 2D y 3D, explorando IA, narrativa interactiva y multijugador."</p>
+
+    <div class="social-buttons">
+      <a href="CV_Arnau.pdf" title="Descargar CV">📄</a>
+      <a href="https://github.com/MolaniTTo" title="GitHub">💻</a>
+      <a href="https://www.linkedin.com/in/tuusuario" title="LinkedIn">🔗</a>
+    </div>
   </header>
-  
-<div class="container">
+
+  <div class="container">
+    <!-- Sobre mí -->
+    <section>
+      <h2>Sobre mí</h2>
+      <p>
+        Soy desarrollador de videojuegos con formación en desarrollo de aplicaciones multiplataforma 
+        y especialización en videojuegos y VR. 
+        Me apasiona el diseño de mecánicas innovadoras, el multijugador y la creación de experiencias inmersivas. 
+        Actualmente sigo ampliando mis conocimientos en Unity y C#, trabajando en proyectos propios 
+        que combinan creatividad y tecnología.
+      </p>
+    </section>
+
+    <!-- Roadmap -->
+    <section>
+      <h2>Roadmap</h2>
+      <p>
+        Mi objetivo profesional es crecer como desarrollador de gameplay y diseño de sistemas, 
+        integrándome en un equipo de desarrollo donde pueda aportar creatividad 
+        y resolver problemas técnicos complejos. 
+        Estoy especialmente interesado en trabajar en proyectos indie y AAA 
+        que exploren nuevas formas de jugabilidad, narrativa y experiencias inmersivas.
+      </p>
+    </section>
+
     <!-- Proyecto 1 -->
     <div class="proyecto">
       <h2>DivorciaDOS</h2>
@@ -166,7 +243,8 @@
       <a href="https://github.com/MolaniTTo/API-SkylineLegends">API Skyline Legands</a>
       <a href="https://github.com/MolaniTTo/WebSkylineLegends">WEB Skyline Legands</a>
     </div>
-</div>
+  </div>
 </body>
 </html>
+
 
