@@ -42,51 +42,37 @@
     }
 
     /* Botones rápidos */
-    .social-buttons {
+        .social-buttons {
       margin: 20px 0;
       display: flex;
       justify-content: center;
       gap: 15px;
-      }
-      .circle-btn {
+    }
+    
+    .circle-btn {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
+      width: 60px;       /* mismo ancho */
+      height: 60px;      /* mismo alto */
+      border-radius: 50%; /* círculo perfecto */
       background: white;
       color: #4a90e2;
       text-decoration: none;
       font-size: 1.5rem;
       transition: transform 0.3s, background 0.3s, color 0.3s;
-      overflow: hidden;
-      }
-      .circle-btn img {
-      width: 60%;
+      overflow: hidden;   /* para que la imagen se recorte circular */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    
+    .circle-btn img {
+      width: 60%;   /* logo más pequeño dentro del botón */
       height: 60%;
       object-fit: contain;
-      }
-      .circle-btn:hover {
-      transform: scale(1.2);
-      background: #ff9800;
-      color: white;
-      }
-    .social-buttons a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background: white;
-      color: #4a90e2;
-      text-decoration: none;
-      font-size: 1.4em;
-      transition: transform 0.3s, background 0.3s, color 0.3s;
     }
-    .social-buttons a:hover {
-      transform: scale(1.2);
+    
+    .circle-btn:hover {
+      transform: scale(1.15);
       background: #ff9800;
       color: white;
     }
