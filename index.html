@@ -43,10 +43,8 @@
 
     /* Botones rápidos */
     .social-buttons {
-      margin: 20px 0;
       display: flex;
       justify-content: center;
-      gap: 15px;
     }
     
     .circle-btn {
@@ -56,11 +54,12 @@
       border-radius: 50%;
       border: 4px solid white;
     }
-    
-    .circle-btn:hover {
-      transform: scale(1.15);  /* agranda todo el botón */
-      background: #ff9800;     /* cambia el fondo del círculo */
+    .circle-btn img {
+      width: 100%;    /* la imagen ocupa todo el botón */
+      height: 100%;
+      object-fit: cover; /* la recorta en círculo */
     }
+    
 
     .container {
       max-width: 1000px;
