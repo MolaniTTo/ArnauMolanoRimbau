@@ -1,0 +1,256 @@
+
+    body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; 
+    background: #000000; 
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    header {
+        position: fixed;   /* Fijo en la ventana */
+        top: 0;            /* Pegado arriba */
+        left: 0;
+        width: 100%;
+        height: 10%;       /* Que ocupe todo el ancho */
+        z-index: 1000;     /* Que quede por encima del contenido */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 30px;
+        background: black;
+        color: rgb(255, 255, 255);
+        flex-wrap: wrap;
+        box-shadow: 0 0 50px 5px rgb(0, 42, 121);
+    }
+
+    .header-left h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+    .header-left h2 {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 400;
+        opacity: 0.8;
+    }
+
+    .social-buttons {
+        display: flex;
+        gap: 15px;
+        margin-right:50px;
+
+    }
+
+    .intro {
+        margin-top: 120px;
+        margin-bottom: 120px;
+        width: 60%;
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        background-color: #000000;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 40px 30px;
+    }
+
+    .intro-foto {
+        background-color: rgb(0, 0, 0);
+
+    }
+
+    .logoArnau {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid rgb(0, 0, 0);
+         box-shadow: 0 0 25px 2px rgb(0, 42, 121);
+    }
+    
+    .tagline-text {
+        flex: 1;
+        margin-left: 30px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .tagline {
+        font-size: 2rem;
+        color: #ffffff;
+    }
+
+    .title-projects{
+        display:flex;
+        width: 65%;
+        justify-content: start;
+        background-color: rgb(0, 0, 0);
+        color:#ffffff;
+        font-size: 1.3rem;
+    }
+
+    .projects-container {
+        display : flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        align-items: center;
+        width: 70%;
+        gap: 35px;
+        margin-bottom: 50px;
+    }
+
+    .project { 
+        width: 550px;
+        height: 100%;
+        background: rgb(0, 0, 0); 
+        border-radius: 15px; 
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        box-shadow: 0 0 10px 2px rgb(0, 42, 121);
+        
+    }
+
+    .project:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 50px 5px rgb(0, 42, 121);
+    }
+    .project h2 { 
+        color: #ffffff;
+        padding-top: 5px;
+        padding-left: 15px;
+    }
+    .project h3 {
+        font-weight: normal;
+        color: #a5a5a5;
+        padding-left: 15px;
+    }
+    .project ul {
+        padding-left: 30px;
+        color: #cacaca;
+    }
+
+    .video {
+        position: relative;
+        padding-bottom: 56%; 
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        border-radius: 10px;
+    }
+
+    .video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    .btn-link {
+        padding: 8px 14px;
+        background: rgb(0, 42, 121);
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        border-radius: 8px;
+        transition: background 0.5s ease;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        display: inline-block;
+        box-shadow: 0 0 5px 2px rgb(0, 42, 121);
+    }
+
+     .btn-link:hover {
+      background: #00123a;
+    }
+
+    .education-container {
+        display: flex;
+        flex-direction: row;
+        width: 65%;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .education{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+        padding-left: 20px;
+        box-shadow: 0 0 10px 2px rgb(0, 42, 121);
+        color: #ffffff;
+        flex: 1;
+    }
+    .education h3 {
+        background-color: rgb(0, 0, 0);
+        margin:10;
+        margin-bottom: 5px;
+    }
+    .education p {
+        margin-top: 0px;
+        margin-bottom: 15px;
+
+        color: #ffffff;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .skills-container {
+        display: flex;
+        flex-direction: row;
+        width: 65%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .skills-container h3{
+
+        border-radius: 5%;
+        border: 2px solid white;
+        width: 110px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0 0 10px 2px rgb(0, 42, 121);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        
+    }
+
+    .aboutMe{
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        background-color: rgb(0, 0, 0);
+        padding: 20px;
+        box-shadow: 0 0 10px 2px rgb(0, 42, 121);
+        color: #ffffff;
+        margin-bottom: 50px;
+        line-height: 1.6;
+        font-size: 1.3rem;
+    }
+
+   .circle-btn {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border: 2px solid rgb(0, 0, 0);
+        overflow: hidden;      
+    }
+    .circle-btn img {
+        width: 80%;                 
+        height: 80%;
+        object-fit: contain; 
+    }
+
+    .circle-btn:hover {
+        box-shadow: 0 0 15px 3px rgb(0, 42, 121);
+    }
