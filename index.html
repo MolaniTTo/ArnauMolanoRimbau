@@ -1,250 +1,183 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio de Videojuegos</title>
-  <style>
-    body { 
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-      margin: 0; 
-      background: #f4f4f9; 
-      color: #333;
-    }
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      background: linear-gradient(135deg, #4a90e2, #5a3ea6);
-      color: white;
-    }
-    .logoArnau {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid white;
-      margin-bottom: 15px;
-    }
-    header h1 {
-      margin: 10px 0 5px;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
+    <meta charset="UTF-8">
+    <title>Portfolio de Videojuegos</title>
+    <link rel="stylesheet" href="style.css">
 
-    /* Tagline */
-    .tagline {
-      font-size: 1.1rem;
-      margin: 15px 0;
-      font-style: italic;
-      color: #f0f0f0;
-    }
-
-    /* Botones rápidos */
-    .social-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-    }
-    .circle-btn {
-      display: flex; 
-      justify-content: center;
-      align-items: center;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      border: 2px solid white;
-      background: #ffffff;
-      overflow: hidden;      
-    }
-    .circle-btn img {
-      width: 85%;                 
-      height: 85%;
-      object-fit: contain; 
-    }
-
-    .circle-btn:hover {
-      background: #eaeaea;
-    }
-    
-    
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    section {
-      background: white;
-      padding: 20px;
-      margin-bottom: 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    section h2 {
-      margin-top: 0;
-      color: #4a90e2;
-    }
-
-    .proyecto { 
-      background: white; 
-      padding: 20px; 
-      margin-bottom: 30px; 
-      border-radius: 15px; 
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .proyecto:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-    }
-    .proyecto h2 { 
-      color: #4a90e2;
-      margin-top: 0;
-    }
-    .proyecto h3 {
-      font-weight: normal;
-      color: #666;
-    }
-    .proyecto ul {
-      margin-top: 10px;
-    }
-    .video {
-      position: relative;
-      padding-bottom: 56.25%; 
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-      background: #000;
-      margin-top: 15px;
-      border-radius: 10px;
-    }
-    .video iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-    .btn-link {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 14px;
-      background: #4a90e2;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.2s ease;
-      
-    }
-    .btn-link:hover {
-      background: #357ab8;
-    }
-
-  </style>
 </head>
+
 <body>
 
-  <!-- Encabezado -->
-  <header>
-    <img src="imagenes/foto-perfil.jpg" class="logoArnau" alt="Foto de Arnau Molano Rimbau">
-    <h1>Arnau Molano Rimbau</h1>
-    <h2>Desarrollador de Videojuegos · Unity & C#</h2>
-    <p class="tagline">Apasionado por crear videojuegos que enganchen al jugador y transmitan emociones, combinando creatividad y tecnología en experiencias 2D y 3D.</p>
+    <!-- Encabezado -->
+    <header>
+        <div class="header-left">
+            <h1>Arnau Molano Rimbau</h1>
+            <h2>Desarrollador de Videojuegos · Unity & C#</h2>
+        </div>
+        <div class="social-buttons">
+            <a href="CV_Arnau.pdf" target="_blank" title="Descargar CV" class="circle-btn"><img
+                    src="imagenes/CV.png" alt="CV"></a>
+            <a href="https://github.com/MolaniTTo" target="_blank" title="GitHub" class="circle-btn"><img
+                    src="imagenes/GitHub.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/arnau-molano-rimbau-576351383/" target="_blank" title="LinkedIn"
+                class="circle-btn"><img src="imagenes/LinkedIn.png" alt="LinkedIn"></a>
+        </div>
+    </header>
 
-    <div class="social-buttons">
-      <a href="CV_Arnau.pdf" target="_blank" title="Descargar CV" class="circle-btn"><img src="imagenes/CV-logo.png" alt="CV"></a>
-      <a href="https://github.com/MolaniTTo" target="_blank" title="GitHub" class="circle-btn"><img src="imagenes/github-logo.png" alt="GitHub"></a>
-      <a href="https://www.linkedin.com/in/arnau-molano-rimbau-576351383/" target="_blank" title="LinkedIn" class="circle-btn"><img src="imagenes/linkedin-blacklogo.png" alt="LinkedIn"></a>
+    <div class="intro">
+        <div class="intro-foto">
+            <img src="imagenes/foto-perfil.jpg" class="logoArnau" alt="Foto de Arnau Molano Rimbau">
+        </div>
+        <div class="tagline-text">
+            <p class="tagline">Apasionado por crear videojuegos que enganchen al jugador y transmitan emociones,
+                combinando creatividad y tecnología en experiencias 2D y 3D.</p>
+        </div>
+
     </div>
-  </header>
-
-  <div class="container">
-    <!-- Sobre mí -->
-    <section>
-      <h2>Sobre mí</h2>
-      <p>
-        Soy desarrollador de videojuegos con formación en desarrollo de aplicaciones multiplataforma 
-        y especialización en videojuegos y VR. 
-        Me apasiona el diseño de mecánicas innovadoras, el multijugador y la creación de experiencias inmersivas. 
-        Actualmente sigo ampliando mis conocimientos en Unity y C#, trabajando en proyectos propios 
-        que combinan creatividad y tecnología.
-      </p>
-    </section>
-
-    <!-- Roadmap -->
-    <section>
-      <h2>Roadmap</h2>
-      <p>
-        Mi objetivo profesional es crecer como desarrollador de videojuegos, aportando creatividad y resolviendo problemas de forma eficiente. Estoy abierto a diferentes roles dentro del proceso de desarrollo, ya sea en programación, diseño de niveles, escenarios, personajes o mecánicas. Me interesa especialmente participar en proyectos que exploren nuevas formas de entretenimiento interactivo, desde videojuegos 2D y 3D hasta otro tipo de experiencias como juegos de cartas o gambling.
-      </p>
-    </section>
-
-    <!-- Proyecto 1 -->
-    <div class="proyecto">
-      <h2>DivorciaDOS</h2>
-      <h3>Videojuego 3D que juega con la perspectiva y la narración para crear efectos ópticos, retos visuales y una historia única</h3>
-      <ul>
-        <li>Multijugador online para móvil, permitiendo que dos jugadores se conecten desde sus dispositivos.</li>
-        <li>Algoritmos de busqueda eficiente Pathfinding y sistema de nodos</li>
-        <li>Aventura cooperativa centrada en la narrativa.</li>
-        <li>Diseño de niveles y mecánicas enfocadas en transmitir emociones.</li>
-        <li>Desarrollo realizado en equipo (programación, diseño de niveles y narrativa interactiva).</li>
-      </ul>
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/2gzXP0xu8q8" allowfullscreen></iframe>
-      </div>
-      <a href="https://github.com/MolaniTTo/DivorciaDOS" target="_blank" class="btn-link">Repositorio en GitHub</a>
+    <div class="title-projects">
+        <h2>Game Programming</h2>
     </div>
 
-    <!-- Proyecto 2 -->
-    <div class="proyecto">
-      <h2>Endless Path</h2>
-      <h3>Roguelike 2D con generación procedural y muerte permanente</h3>
-      <ul>
-        <li>Generación procedural de salas.</li>
-        <li>Desbloqueo y mejora de armas.</li>
-        <li>Partidas siempre diferentes.</li>
-      </ul>
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/ca8Cd_ntsjY" allowfullscreen></iframe>
-      </div>
-      <a href="https://github.com/MolaniTTo/MolanoArnau_M17UF2R1" target="_blank" class="btn-link">Repositorio en GitHub</a>
+    <div class="projects-container">
+
+        <!-- Proyecto 1 -->
+        <div class="project">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/2gzXP0xu8q8" allowfullscreen></iframe>
+            </div>
+            <h2>DivorciaDOS</h2>
+            <h3>Videojuego 3D que juega con la perspectiva y la narración para crear efectos ópticos, retos visuales y
+                una historia única.</h3>
+            <ul>
+                <li>Multijugador online para dipsositivos móviles de 2 jugadores.
+                </li>
+                <li>Algoritmos de busqueda eficiente Pathfinding y sistema de nodos.</li>
+                <li>Aventura cooperativa centrada en la narrativa.</li>
+            </ul>
+            <a href="https://github.com/MolaniTTo/DivorciaDOS" target="_blank" class="btn-link">Repositorio en
+                GitHub</a>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="project">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/ca8Cd_ntsjY" allowfullscreen></iframe>
+            </div>
+            <h2>Endless Path</h2>
+            <h3>Videojuego estilo Roguelike 2D topdown con generación procedural de salas y muerte permanente</h3>
+            <ul>
+                <li>Generación procedural de salas.</li>
+                <li>Desbloqueo y mejora de armas.</li>
+                <li>Partidas siempre diferentes.</li>
+            </ul>
+
+            <a href="https://github.com/MolaniTTo/MolanoArnau_M17UF2R1" target="_blank" class="btn-link">Repositorio en
+                GitHub</a>
+        </div>
+
+        <div class="project">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/Q1IvZor3TkY" allowfullscreen></iframe>
+            </div>
+            <h2>VVVVVV</h2>
+            <h3>Exploración por pantallas al estilo retro 2D con un cambio de gravedad en el juego</h3>
+            <ul>
+                <li>Cambio de gravedad como mecánica principal.</li>
+                <li>Exploración por pantallas tipo NES/Game Boy.</li>
+                <li>Sistema de puertas y llaves con cambios de tamaño.</li>
+            </ul>
+
+            <a href="https://github.com/MolaniTTo/MolanoArnau_M17UF1R1" target="_blank" class="btn-link">Repositorio en
+                GitHub</a>
+        </div>
+
+        <div class="project">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/Lz4GR2ko1k0" allowfullscreen></iframe>
+            </div>
+            <h2>Skyline Legends</h2>
+            <h3>Videojuego 3D multijugador local para PC de carreras de naves espaciales</h3>
+            <ul>
+                <li>Multijugador local en pantalla dividida.</li>
+                <li>Sistema gashapon de desbloqueo de naves.</li>
+                <li>Ranking de tiempos conectado a base de datos y web.</li>
+            </ul>
+            <a href="https://github.com/MolaniTTo/API-SkylineLegends" target="_blank" class="btn-link">API Skyline
+                Legands</a>
+            <a href="https://github.com/MolaniTTo/WebSkylineLegends" target="_blank" class="btn-link">WEB Skyline
+                Legands</a>
+        </div>
+
     </div>
 
-    <!-- Proyecto 3 -->
-    <div class="proyecto">
-      <h2>VVVVVV</h2>
-      <h3>Exploración retro 2D con mecánica de gravedad invertida</h3>
-      <ul>
-        <li>Cambio de gravedad como mecánica principal.</li>
-        <li>Exploración por pantallas tipo NES/Game Boy.</li>
-      </ul>
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/Q1IvZor3TkY" allowfullscreen></iframe>
-      </div>
-      <a href="https://github.com/MolaniTTo/MolanoArnau_M17UF1R1" target="_blank" class="btn-link">Repositorio en GitHub</a>
+    <div class="title-projects">
+        <h2>Educación</h2>
+    </div>
+    <div class="education-container">
+        <div class="education">
+            <h3>Desarrollador de aplicaciones multiplataforma perfil profesional de videojuegos y ocio digital</h3>
+            <p>Instituto Tecnológico de Barcelona - 2023/2025</p>
+        </div>
+        <div class="education">
+            <h3>Grado de especialización en Videojuegos y Realidad Virtual</h3>
+            <p>Instituto Bernat el Ferrer - 2025/2026</p>
+        </div>
     </div>
 
-    <!-- Proyecto 4 -->
-    <div class="proyecto">
-      <h2>Skyline Legends</h2>
-      <h3>Videojuego 3D multijugador de carreras de naves espaciales</h3>
-      <ul>
-        <li>Multijugador local en pantalla dividida.</li>
-        <li>Sistema gashapon de desbloqueo de naves.</li>
-        <li>Ranking de tiempos conectado a base de datos y a una web.</li>
-      </ul>
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/Lz4GR2ko1k0" allowfullscreen></iframe>
-      </div>
-      <a href="https://github.com/MolaniTTo/API-SkylineLegends" target="_blank" class="btn-link">API Skyline Legands</a>
-      <a href="https://github.com/MolaniTTo/WebSkylineLegends" target="_blank" class="btn-link">WEB Skyline Legands</a>
+    <div class="title-projects">
+        <h2>Experiencia Técnica</h2>
     </div>
-  </div>
+    <div class="skills-container">
+        <h3>Unity</h3>
+        <h3>C#</h3>
+        <h3>Git</h3>
+        <h3>GitHub</h3>
+        <h3>HTML</h3>
+        <h3>CSS</h3>
+        <h3>JavaScript</h3>
+        <h3>Illustrator</h3>
+        <h3>MongoDB</h3>
+        <h3>PostgreSQL</h3>
+        <h3>JSON</h3>
+        <h3>XML</h3>
+        <h3>XPath</h3>
+        <h3>API REST</h3>
+        <h3>Blender</h3>
+    </div>
+
+    <div class="title-projects">
+        <h2>Sobre mí</h2>
+    </div>
+    <div class="aboutMe">
+        <p>
+            Me llamo Arnau Molano Rimbau, tengo 19 años y me considero una persona curiosa, constante y con muchas ganas
+            de
+            seguir aprendiendo. Disfruto tanto de trabajar en equipo como de asumir retos individuales, ya que me
+            motivan
+            los entornos donde la creatividad y la colaboración se combinan para lograr un objetivo común.
+
+            Me adapto fácilmente a nuevas situaciones, valoro mucho la comunicación clara y el buen ambiente de trabajo,
+            y
+            siempre busco aportar ideas constructivas. Además de programar, me interesa crecer como profesional capaz de
+            escuchar, empatizar y encontrar soluciones que mejoren la experiencia tanto de los compañeros como de los
+            jugadores.
+        </p>
+    </div>
+    <div class="title-projects">
+        <h2>Objetivos profesionales</h2>
+    </div>
+    <div class="aboutMe">
+        <p>
+            Mi meta es seguir creciendo como desarrollador de videojuegos, explorando diferentes áreas del proceso
+            creativo y técnico. Me interesa involucrarme tanto en la programación como en el diseño de niveles,
+            escenarios, personajes o mecánicas, ya que disfruto aprendiendo de cada etapa del desarrollo.
+
+            Estoy abierto a nuevos retos y a trabajar en proyectos que busquen innovar en la forma de interactuar con el
+            jugador, ya sea en experiencias 2D, 3D o incluso en otros géneros como juegos de cartas o propuestas más
+            experimentales.
+        </p>
+    </div>
 </body>
+
 </html>
-
-
