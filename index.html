@@ -6,7 +6,14 @@
     <title>Portfolio de Videojuegos</title>
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="Portfolio de Arnau Molano Rimbau, Unity Developer y C# Gameplay Programmer especializado en videojuegos 2D y 3D.">
+    <meta name="author" content="Arnau Molano Rimbau">
     <meta name="google-site-verification" content="vnxvNZ6Zmi_i7ovBh0JjTksJ-3idOb93BecfzRR_2BQ" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Arnau Molano Rimbau — Unity Developer">
+    <meta property="og:description" content="Portfolio de proyectos Unity y C#: IA, generación procedural, multijugador y más.">
+    <meta property="og:image" content="https://molanitto.github.io/ArnauMolanoRimbau/imagenes/foto-perfil.jpg">
+    <meta property="og:url" content="https://molanitto.github.io/ArnauMolanoRimbau/">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
@@ -18,12 +25,9 @@
             <p class="header-subtitle">Game Developer / Programming · Unity & C#</p>
         </div>
         <div class="social-buttons">
-            <a href="CV_Arnau.pdf" target="_blank" title="Descargar CV" class="circle-btn"><img src="imagenes/CV.png"
-                    alt="CV"></a>
-            <a href="https://github.com/MolaniTTo" target="_blank" title="GitHub" class="circle-btn"><img
-                    src="imagenes/GitHub.png" alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/arnau-molano-rimbau-576351383/" target="_blank" title="LinkedIn"
-                class="circle-btn"><img src="imagenes/LinkedIn.png" alt="LinkedIn"></a>
+            <a href="CV_Arnau.pdf" target="_blank" title="Descargar CV" class="circle-btn"><img src="imagenes/CV.png" alt="CV"></a>
+            <a href="https://github.com/MolaniTTo" target="_blank" title="GitHub" class="circle-btn"><img src="imagenes/GitHub.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/arnau-molano-rimbau-576351383/" target="_blank" title="LinkedIn" class="circle-btn"><img src="imagenes/LinkedIn.png" alt="LinkedIn"></a>
         </div>
     </header>
 
@@ -35,8 +39,8 @@
             <p class="tagline">Apasionado por crear videojuegos que enganchen al jugador y transmitan emociones,
                 combinando creatividad y tecnología en experiencias 2D y 3D.</p>
         </div>
-
     </div>
+
     <div class="title-projects">
         <h2>Game Programming</h2>
     </div>
@@ -44,30 +48,27 @@
     <div class="projects-container">
 
         <!-- Proyecto: Meteorborn -->
-        <div class="project project-featured">
+        <div class="project project-featured" id="meteorborn">
             <span class="featured-badge">Proyecto más reciente</span>
             <div class="video">
-                 <video src="https://res.cloudinary.com/dicsauqzl/video/upload/v1789398969/Secuencia_01_3_dgdjc7.mp4"
-                    autoplay loop muted playsinline preload="auto">
-                </video>
+                <video src="https://res.cloudinary.com/dicsauqzl/video/upload/v1789398969/Secuencia_01_3_dgdjc7.mp4"
+                    autoplay loop muted playsinline preload="auto"></video>
             </div>
             <h3 class="project-title">Meteorborn</h3>
-            <p class="project-desc">Videojuego 3D de mundo abierto que combina el combate, la gestion de recursos y los puzzles.</p>
+            <p class="project-desc">Videojuego 3D de mundo abierto que combina el combate, la gestión de recursos y los puzzles.</p>
             <ul>
                 <li>IA enemiga con Behavior Trees</li>
                 <li>Navegación con NavMesh/NavMeshLink</li>
                 <li>Shaders custom en Shader Graph / URP</li>
             </ul>
-            <a href="https://github.com/MolaniTTo/Meteorborn" target="_blank" class="btn-link">Repositorio en
-                GitHub</a>
+            <a href="https://github.com/MolaniTTo/Meteorborn" target="_blank" class="btn-link">Repositorio en GitHub</a>
         </div>
 
         <!-- Proyecto: Dracollage -->
-        <div class="project">
+        <div class="project" id="dracollage">
             <div class="video">
-                 <video src="https://res.cloudinary.com/dicsauqzl/video/upload/v1789394083/Secuencia_01_2_vvj17s.mp4"
-                    autoplay loop muted playsinline preload="auto">
-                </video>
+                <video src="https://res.cloudinary.com/dicsauqzl/video/upload/v1789394083/Secuencia_01_2_vvj17s.mp4"
+                    autoplay loop muted playsinline preload="auto"></video>
             </div>
             <h3 class="project-title">Dracollage</h3>
             <p class="project-desc">Arcade 3D realista creado en la Game Jam RetroBarcelona 2026, homenaje al Drac del Park Güell de Gaudí.</p>
@@ -76,16 +77,14 @@
                 <li>Sistema de restauración de patrones de color contra el tiempo</li>
                 <li>Desarrollo en equipo de 5 personas (3 devs + 2 artistas) bajo restricciones de game jam</li>
             </ul>
-            <a href="https://github.com/MolaniTTo/Game_Jam_2026" target="_blank" class="btn-link">Repositorio en
-                GitHub</a>
+            <a href="https://github.com/MolaniTTo/Game_Jam_2026" target="_blank" class="btn-link">Repositorio en GitHub</a>
         </div>
 
         <!-- Proyecto: Sunwukong -->
-        <div class="project">
+        <div class="project" id="sunwukong">
             <div class="video">
-                 <video src="https://res.cloudinary.com/dicsauqzl/video/upload/v1789391785/Secuencia_01_1_drdrm9.mp4"
-                    autoplay loop muted playsinline preload="auto">
-                </video>
+                <video src="https://res.cloudinary.com/dicsauqzl/video/upload/v1789391785/Secuencia_01_1_drdrm9.mp4"
+                    autoplay loop muted playsinline preload="auto"></video>
             </div>
             <h3 class="project-title">Sunwukong</h3>
             <p class="project-desc">Plataformas 2D de acción inspirado en la mitología china, en la piel del Rey Mono en su viaje hacia la inmortalidad.</p>
@@ -94,104 +93,90 @@
                 <li>Progresión con desbloqueo de habilidades (bastón Ruyi Jingu Bang) para exploración vertical</li>
                 <li>Jefes desafiantes y Modo Perfecto como reto extra</li>
             </ul>
-            <a href="https://github.com/MolaniTTo/SunWukong" target="_blank" class="btn-link">Repositorio en
-                GitHub</a>
+            <a href="https://github.com/MolaniTTo/SunWukong" target="_blank" class="btn-link">Repositorio en GitHub</a>
         </div>
 
         <!-- Proyecto: DivorciaDOS -->
-        <div class="project">
+        <div class="project" id="divorciados">
             <div class="video">
                 <video src="https://res.cloudinary.com/dicsauqzl/video/upload/v1760012427/DivorciaDOS_mqckho.mp4"
-                    autoplay loop muted playsinline preload="auto">
-                </video>
+                    autoplay loop muted playsinline preload="auto"></video>
             </div>
             <h3 class="project-title">DivorciaDOS</h3>
-            <p class="project-desc">Videojuego 3D que juega con la perspectiva y la narración para crear efectos ópticos, retos visuales y
-                una historia única.</p>
+            <p class="project-desc">Videojuego 3D que juega con la perspectiva y la narración para crear efectos ópticos, retos visuales y una historia única.</p>
             <ul>
-                <li>Multijugador online para dipsositivos móviles de 2 jugadores.
-                </li>
-                <li>Algoritmos de busqueda eficiente Pathfinding y sistema de nodos.</li>
+                <li>Multijugador online para dispositivos móviles de 2 jugadores.</li>
+                <li>Algoritmos de búsqueda eficiente Pathfinding y sistema de nodos.</li>
                 <li>Aventura cooperativa centrada en la narrativa.</li>
             </ul>
-            <a href="https://github.com/MolaniTTo/DivorciaDOS" target="_blank" class="btn-link">Repositorio en
-                GitHub</a>
+            <a href="https://github.com/MolaniTTo/DivorciaDOS" target="_blank" class="btn-link">Repositorio en GitHub</a>
         </div>
+
         <!-- Proyecto: RPG 3D -->
-        <div class="project">
+        <div class="project" id="rpg3d">
             <div class="video">
                 <video src="https://res.cloudinary.com/dicsauqzl/video/upload/v1760012964/RPG_3D_2_yzup9i.mp4"
-                    autoplay loop muted playsinline preload="auto">
-                </video>
+                    autoplay loop muted playsinline preload="auto"></video>
             </div>
             <h3 class="project-title">RPG 3D</h3>
             <p class="project-desc">Videojuego 3D con zombis inteligentes gracias a un sistema de IA modular.</p>
             <ul>
-                <li>Inteligencia artificial modular creada con behavior tree.
-                </li>
-                <li>Controladores de animaciones avanzados con blend trees.</li>
+                <li>Inteligencia artificial modular creada con Behavior Tree.</li>
+                <li>Controladores de animaciones avanzados con Blend Trees.</li>
                 <li>Implementación de IKs para sincronizar el arma con el personaje.</li>
             </ul>
-            <a href="https://github.com/MolaniTTo/RPG_3D" target="_blank" class="btn-link">Repositorio en
-                GitHub</a>
+            <a href="https://github.com/MolaniTTo/RPG_3D" target="_blank" class="btn-link">Repositorio en GitHub</a>
         </div>
+
         <!-- Proyecto: Endless Path -->
-        <div class="project">
+        <div class="project" id="endlesspath">
             <div class="video">
                 <video src="https://res.cloudinary.com/dicsauqzl/video/upload/v1760012433/RogueLike_zn4gjy.mp4"
-                    autoplay loop muted playsinline preload="auto">
-                </video>
+                    autoplay loop muted playsinline preload="auto"></video>
             </div>
             <h3 class="project-title">Endless Path</h3>
-            <p class="project-desc">Videojuego estilo Roguelike 2D topdown con generación procedural de salas y muerte permanente</p>
+            <p class="project-desc">Videojuego estilo Roguelike 2D topdown con generación procedural de salas y muerte permanente.</p>
             <ul>
                 <li>Generación procedural de salas.</li>
                 <li>Desbloqueo y mejora de armas.</li>
                 <li>Partidas siempre diferentes.</li>
             </ul>
-
-            <a href="https://github.com/MolaniTTo/MolanoArnau_M17UF2R1" target="_blank" class="btn-link">Repositorio en
-                GitHub</a>
+            <a href="https://github.com/MolaniTTo/MolanoArnau_M17UF2R1" target="_blank" class="btn-link">Repositorio en GitHub</a>
         </div>
 
         <!-- Proyecto: VVVVVV -->
-        <div class="project">
+        <div class="project" id="vvvvvv">
             <div class="video">
-                 <video src="https://res.cloudinary.com/dicsauqzl/video/upload/v1760012428/VVVVVV_snmwem.mp4"
-                    autoplay loop muted playsinline preload="auto">
-                </video>
+                <video src="https://res.cloudinary.com/dicsauqzl/video/upload/v1760012428/VVVVVV_snmwem.mp4"
+                    autoplay loop muted playsinline preload="auto"></video>
             </div>
             <h3 class="project-title">VVVVVV</h3>
-            <p class="project-desc">Exploración por pantallas al estilo retro 2D con un cambio de gravedad en el juego</p>
+            <p class="project-desc">Exploración por pantallas al estilo retro 2D con un cambio de gravedad como mecánica principal.</p>
             <ul>
                 <li>Cambio de gravedad como mecánica principal.</li>
                 <li>Exploración por pantallas tipo NES/Game Boy.</li>
                 <li>Sistema de puertas y llaves con cambios de tamaño.</li>
             </ul>
-
-            <a href="https://github.com/MolaniTTo/MolanoArnau_M17UF1R1" target="_blank" class="btn-link">Repositorio en
-                GitHub</a>
+            <a href="https://github.com/MolaniTTo/MolanoArnau_M17UF1R1" target="_blank" class="btn-link">Repositorio en GitHub</a>
         </div>
 
         <!-- Proyecto: Skyline Legends -->
-        <div class="project">
+        <div class="project" id="skylinelegends">
             <div class="video">
-                 <video src="https://res.cloudinary.com/dicsauqzl/video/upload/v1760012427/SKYLINE_LEGENDS_dteie0.mp4"
-                    autoplay loop muted playsinline preload="auto">
-                </video>
+                <video src="https://res.cloudinary.com/dicsauqzl/video/upload/v1760012427/SKYLINE_LEGENDS_dteie0.mp4"
+                    autoplay loop muted playsinline preload="auto"></video>
             </div>
             <h3 class="project-title">Skyline Legends</h3>
-            <p class="project-desc">Videojuego 3D multijugador local para PC de carreras de naves espaciales</p>
+            <p class="project-desc">Videojuego 3D multijugador local para PC de carreras de naves espaciales.</p>
             <ul>
                 <li>Multijugador local en pantalla dividida.</li>
                 <li>Sistema gashapon de desbloqueo de naves.</li>
                 <li>Ranking de tiempos conectado a base de datos y web.</li>
             </ul>
-            <a href="https://github.com/MolaniTTo/API-SkylineLegends" target="_blank" class="btn-link">API Skyline
-                Legands</a>
-            <a href="https://github.com/MolaniTTo/WebSkylineLegends" target="_blank" class="btn-link">WEB Skyline
-                Legands</a>
+            <a href="https://github.com/MolaniTTo/API-SkylineLegends" target="_blank" class="btn-link">API Skyline Legends</a>
+            <a href="https://github.com/MolaniTTo/WebSkylineLegends" target="_blank" class="btn-link">WEB Skyline Legends</a>
         </div>
+
     </div>
 
     <div class="title-projects">
@@ -278,15 +263,14 @@
             Me llamo Arnau Molano Rimbau y soy desarrollador de videojuegos especializado en Unity y C#. Disfruto
             tanto resolviendo problemas técnicos (IA, pathfinding, sistemas procedurales) como pensando en cómo esas
             decisiones afectan a la experiencia del jugador. He trabajado en proyectos 2D y 3D, solo y en equipo, y
-            me gusta especialmente la fase donde una mecánica abstracta se convierte en algo que se siente bien
-            jugar.
+            me gusta especialmente la fase donde una mecánica abstracta se convierte en algo que se siente bien jugar.
         </p>
         <p>
             Me adapto rápido a nuevas herramientas y flujos de trabajo, y valoro mucho la comunicación clara cuando
-            colaboro con otras personas en un proyecto, ya sea repartiendo sistemas o integrando código de
-            compañeros.
+            colaboro con otras personas en un proyecto, ya sea repartiendo sistemas o integrando código de compañeros.
         </p>
     </div>
+
     <div class="title-projects">
         <h2>Objetivos profesionales</h2>
     </div>
@@ -302,6 +286,7 @@
             alejarme de la programación, que es donde más disfruto.
         </p>
     </div>
+
 </body>
 
 </html>
